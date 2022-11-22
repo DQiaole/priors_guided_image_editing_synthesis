@@ -1,0 +1,347 @@
+
+ <!doctype html>
+<html>
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+     <meta name="description" content="Sparse Learning in Neural Networks and Robust Statistical Analysis">
+     <meta name="author" content="">
+ 
+     <title>Priors Guided Image Editing and Synthesis</title>
+ 
+     <!-- Bootstrap core CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+     <!-- Custom Google Web Font -->
+     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+     
+     <!-- Custom CSS-->
+     <link href="css/general.css" rel="stylesheet">
+     
+      <!-- Owl-Carousel -->
+     <link href="css/custom.css" rel="stylesheet">
+     <link href="css/owl.carousel.css" rel="stylesheet">
+     <link href="css/owl.theme.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <link href="css/animate.css" rel="stylesheet">
+     
+     <!-- Magnific Popup core CSS file -->
+     <link rel="stylesheet" href="css/magnific-popup.css"> 
+     
+     <script src="js/modernizr-2.8.3.min.js"></script>  
+ 
+ </head>
+ 
+ <body id="home">
+ 
+     <!-- Preloader -->
+     <div id="preloader">
+         <div id="status"></div>
+     </div>
+     
+     <!-- FullScreen -->
+     <div class="intro-header">
+         <div class="col-xs-12 text-center abcen1">
+             <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s" style="text-shadow: 0 0 8px #000000;">The Priors Guided Image Editing and Synthesis</h1>
+             <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" style="text-shadow: 0px 8px 4px black, 0 0 25px black"> 
+                 <a style="color:white" href="http://cvpr2022.thecvf.com/" target="_blank"><b>ACCV 2022</b></a> tutorial </p>
+                 Dec 5<sup>th</sup> 2022 (9:00 AM - 1:00 PM)</p>
+                 Location: Orchid 3, 28F, Hotel Okura, Macau</p>
+             </h3>
+         </div>    
+     </div>
+     
+     <!-- NavBar-->
+     <nav class="navbar-default" role="navigation">
+         <div class="container">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="#home">PGIES 2022</a>
+             </div>
+ 
+             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                 <ul class="nav navbar-nav">
+                     
+                     <li class="menuItem"><a href="#scope">Home</a></li>
+                     <li class="menuItem"><a href="#program">Program</a></li>
+                     <li class="menuItem"><a href="#organizers">Organizers and Speakers</a></li>	
+                     <li class="menuItem"><a href="#contacts">Contact</a></li>
+                 </ul>
+             </div>
+            
+         </div>
+     </nav> 
+     
+     <!-- Scope -->
+     <div id ="scope" class="content-section-a" style="border-top: 0">
+ 
+         <div class="container">
+             
+             <div class="row">
+             
+                 <div class="wow fadeInRightBig" data-animation-delay="200"> 
+                     <h3 class="section-heading">ACCV 2022 Tutorial on " The Priors Guided Image Editing and Synthesis"</h3>
+                     <h4 class="section-heading">News</h4>
+                     <font color="#FF0000">Our tutorial will be held on Dec 5<sup>th</sup> 2022 (9:00 AM - 1:00 PM) in
+                         Orchid 3, 28F, Hotel Okura, Macau.</font>
+                     <h4 class="section-heading">Image inpainting</h4>
+                     <p class="lead"  style="text-align:justify">
+                        Image inpainting is a task of filling the missing region in the images with plausible contents.
+                         Benefited from the development of deep learning, Pathak et al. firstly propose a GAN-based
+                         network for image inpainting and achieve impressive results. DeepFill utilizes contextual
+                         attention for image inpainting, which explicitly borrows surrounding image features as
+                         references. And the Co-Modulation GAN tackles the large-scale image inpainting via co-modulation
+                         of both conditional and stochastic style representations based on sophisticated StyleGAN
+                         architecture. Recently, LaMa uses the Fast Fourier Convolution to encode the features in
+                         frequency fields with global receptive fields and achieves resolution-robust inpainting.
+                         We plan to conduct a comprehensive overview of these methods.
+                     </p>
+                     <h4 class="section-heading">Prior guided image inpainting</h4>
+                     <p class="lead"  style="text-align:justify">
+                        Although image inpainting has made significant advances in recent years, it is still challenging
+                         to recover corrupted images with reasonable structures. EdgeConnect, in particular, utilizes
+                         canny edges to inpaint masked areas with precise structural results. However, no holistic
+                         structure information has been considered for man-made situations. In this talk, we will
+                         introduce a novel method MST~\cite{cao2021learning} to conquer the task of inpainting man-made
+                         scenes. Specifically, MST proposes learning a Sketch Tensor (ST) space for inpainting man-made
+                         scenes. Such a space is learned to restore the edges, lines, and junctions in images, and thus
+                         makes reliable predictions of the holistic image structures. Besides, these sophisticated
+                         prior-based methods are usually based on multi-stage or multi-model designs, which are costly
+                         to be trained from scratch. Therefore, ZITS was proposed to incrementally incorporate the prior
+                         into a pre-trained inpainting model without retraining. Moreover, ZITS can tackle high-resolution
+                         inpainting with intuitive structural upsampling and masking positional encoding. We will review
+                         these methods and discuss their pros and cons.
+                     </p>
+                     <h4 class="section-heading">GAN based Image Editing</h4>
+                     <p class="lead"  style="text-align:justify">
+                        Compared with vanilla AutoEncoders (AEs), GANs achieved superior performance in various
+                         image-to-image tasks, e.g., pix2pix, cycleGAN, StarGAN, and SC-FEGAN. Because the adversarial
+                         loss can effectively relieve blurry artifacts with more perceptually pleasant results. Recently,
+                         benefited by the powerful generative capability of StyleGAN, various GAN inversion works also
+                         get impressive editing results with only optimizing the latent code with freezed GAN models. And
+                         the encoder-based GAN inversion method just trains an encoder to project the guidance to the
+                         initial latent codes for a pre-trained StyleGAN, which enjoys a faster inference efficiency
+                         compared with optimization-based GAN inversion approaches. Moreover, the work in further combines
+                         the optimization-based method and the encoder-based one, and enjoys both advantages of them.
+                         We will provide a comprehensive review of these methods.
+                     </p>
+                     <h4 class="section-heading">Transformer based Image Editing</h4>
+                     <p class="lead"  style="text-align:justify">
+                        Vision Transformers (ViTs) have achieved great success in many vision tasks. Benefited by the
+                         perceptual image tokenizer, such as VQVAE, many ViT-based methods can also be leveraged to
+                         solve various conditional-based image editing tasks. However, these works fail to address local
+                         editing suffering from the limited receptive fields of the standard AutoRegressive (AR) attention
+                         setting. In iLAT, a local AR ViT is proposed to solve this problem and achieve good results in
+                         both face and pose editing. Besides, ManiTrans can flexibly solve entity-level text-guided image
+                         manipulation with a semantic alignment module and a powerful ViT model. We will discuss these
+                         approaches and show pros and cons of them.
+                     </p>
+
+ 
+                 </div>   
+             </div>
+         </div>
+         <!-- /.container -->
+     </div>
+ 
+     <!-- Program -->
+     <div id ="program" class="content-section-a">
+ 
+         <div class="container">				
+                 <div class="wow fadeInLeftBig" data-animation-delay="200">   
+                     <h3 class="section-heading">Program</h3>
+ 
+                     <!-- <p class="lead"> -->
+                         <!-- Our program is divided into two sub-sessions: (1) Sparse Learning in Neural Networks and (2) Sparse Learning in Robust Statistical Analysis.  -->
+                     <!-- </p> -->
+                 </div>
+             
+   <table class="table" style="width:100%">
+    <tr class="info">
+        <td><strong>Sessions
+        </strong></td>
+        <td>Title</td>
+        <td>Slides</td>
+        <!-- <td>Slides</td> -->
+        <td>Speakers</td>
+      </tr>
+       <tr class="success">
+         <td>9:00 - 9:10</td>
+         <td><strong>Opening Remarks &emsp;
+         </strong></td>
+         <td></td>
+         <!-- <td></td> -->
+         <td>Yanwei Fu</td>
+       </tr>
+ 
+       <tr>
+         <td>9:10 - 10:20</td>
+<!--         <td><strong><a href="pdf/YanweiFu.pdf">Introduction</a> &emsp;-->
+           <td><strong>Introduction</strong>
+         </td>
+<!--         <td>[<a href="https://www.youtube.com/watch?v=leV1qA0_UpQ&list=PL4lAyMKLeT7QmXvX-aMDFXby6gUqZBLAn">Youtube</a>]-->
+<!--             [<a href="https://www.bilibili.com/video/BV1Rg411Q7Zj">Bilibili</a>]</td>-->
+           <td>TBD</td>
+         <!-- <td></td> -->
+         <td>Yanwei Fu</td>
+       </tr>
+    
+       <tr class="success">
+         <td>10:20 - 10:50</td>
+         <td><strong>TBD</strong> &emsp;
+         </td>
+         <td>TBD</td>
+         <!-- <td></td> -->
+         <td>Chenjie Cao</td>
+       </tr>
+ 
+       <tr>
+         <td>10:50 - 11:05</td>
+         <td><strong>Break &emsp;
+         </strong></td>
+         <td></td>
+         <td></td>
+         <!-- <td></td> -->
+       </tr>
+ 
+       <tr class="success">
+         <td>11:05 - 12:15</td>
+         <td><strong>TBD
+        </strong></td>
+        <td>TBD</td>
+        <!-- <td></td> -->
+         <td>Shenghua Gao</td>
+       </tr>
+ 
+       <tr>
+         <td>12:15 - 12:45</td>
+         <td><strong>TBD</strong>
+         </td>
+         <td>TBD</td>
+         <!-- <td></td> -->
+         <td>Qiaole Dong</td>
+       </tr>
+ 
+     </table>
+ 
+             <div class="container">				
+                 <div class="wow fadeInRightBig" data-animation-delay="200">
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     <!-- Organizers -->
+     <div id="organizers" class="content-section-a"> 
+         
+         <div class="container">
+                 <div class="row wow fadeInRightBig"  data-animation-delay="200">
+                 <h3 class="section-heading">Organizers and Speakers</h3>
+ 
+                 <div class="col-sm-2 wow fadeInRightBig"  data-animation-delay="200">   
+                     <center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/organizer/fuyanwei.png" alt=""></center>
+                     <h4 class="section-heading"><center><a href="https://yanweifu.github.io">Yanwei Fu</a></center></h4>
+                     <h5 class="section-heading"><center><i>Fudan University</i></center></h5>
+                </div>
+
+                <div class="col-sm-2 wow fadeInRightBig"  data-animation-delay="200">
+                    <center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/organizer/chenjiecao.jpg" alt=""></center>
+                    <h4 class="section-heading"><center><a href="https://github.com/ewrfcas">Chenjie Cao</a></center></h4>
+                    <h5 class="section-heading"><center><i>Fudan University</i></center></h5>
+                </div>
+                 
+
+                <div class="col-sm-2 wow fadeInRightBig"  data-animation-delay="200">   
+                    <center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/organizer/shenghuagao.jpg" alt=""></center>
+                    <h4 class="section-heading"><center><a href="https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=zh-CN&oi=ao">Shenghua Gao</a></center></h4>
+                    <h5 class="section-heading"><center><i>ShanghaiTech University</i></center></h5>
+                </div>
+                
+                <div class="col-sm-2 wow fadeInRightBig"  data-animation-delay="200">   
+                    <center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150" src="img/organizer/qiaoledong.jpg" alt=""></center>
+                    <h4 class="section-heading"><center><a href="https://dqiaole.github.io/">Qiaole Dong</a></center></h4>
+                    <h5 class="section-heading"><center><i>Fudan University</i></center></h5>
+                </div>
+
+ 
+ 
+         </div>
+     </div>
+ 
+         <!-- /.container -->
+     
+     <div id="contacts" class="content-section-c ">
+              <!-- Contacts -->
+         <div class="container">
+             <div class="row">
+             
+                 <!--div class="col-sm-6 pull-right wow fadeInRightBig">
+                     <img class="img-responsive " src="img/ipad.png" alt="">
+                 </div-->
+                 
+                 <div class="wow fadeInLeftBig" data-animation-delay="200">   
+                     <h3 class="section-heading" style="color:white">Contacts</h3>
+                     <!--div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div-->
+                     <p class="lead"  style="text-align:left;color:white">
+                         Contact the Organizing Committee: yanweifu@fudan.edu.cn
+                     </p>
+                     
+                 </div>   				
+             </div>
+             <div class="row">
+             
+                         <div class="col-md-6 col-md-offset-3 text-center">
+                             <div >
+                                     <div class="morph-button ">
+                                         <button type="button"></button>
+                                         
+                                     </div>
+                             </div>
+                         </div>	
+             </div>
+ 
+         </div>
+     </div>	
+ 
+    
+     <footer>
+     
+     </footer>
+ 
+     <!-- JavaScript -->
+     <script src="js/jquery-1.10.2.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src="js/owl.carousel.js"></script>
+     <script src="js/script.js"></script>
+     <!-- StikyMenu -->
+     <script src="js/stickUp.min.js"></script>
+     <script type="text/javascript">
+       jQuery(function($) {
+         $(document).ready( function() {
+           $('.navbar-default').stickUp();
+           
+         });
+       });
+     
+     </script>
+     <!-- Smoothscroll -->
+     <script type="text/javascript" src="js/jquery.corner.js"></script> 
+     <script src="js/wow.min.js"></script>
+     <script>
+      new WOW().init();
+     </script>
+     <script src="js/classie.js"></script>
+     <script src="js/uiMorphingButton_inflow.js"></script>
+     <!-- Magnific Popup core JS file -->
+     <script src="js/jquery.magnific-popup.js"></script> 
+ </body>
+ 
+ </html>
+ 
